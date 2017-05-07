@@ -36,6 +36,7 @@ public class movieStart : MonoBehaviour
 
     public void PauseMovie()
     {
+        Start();
         moviePlayer.Pause();
       
     }

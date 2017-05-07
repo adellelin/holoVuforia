@@ -1,0 +1,157 @@
+fileFormatVersion: 2
+guid: 322c7e96e155ab94db6f76bdf1fd69c1
+timeCreated: 1492635488
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bells_default13
+    100002: Box_default14
+    100004: Cord_Leather-Black
+    100006: DialerHandle_default
+    100008: DialerKnob_default
+    100010: EraPhone_Car_Paint_-_Matte_Dark_Gray
+    100012: Hammer_default2
+    100014: HammerCover_default3
+    100016: HangerHook_default5
+    100018: HangerPlate_default7
+    100020: Mic_default10
+    100022: MicBolt_default9
+    100024: MicSwivel_default11
+    100026: nuts_default6
+    100028: //RootNode
+    100030: Rest_default4
+    100032: screws_default12
+    400000: Bells_default13
+    400002: Box_default14
+    400004: Cord_Leather-Black
+    400006: DialerHandle_default
+    400008: DialerKnob_default
+    400010: EraPhone_Car_Paint_-_Matte_Dark_Gray
+    400012: Hammer_default2
+    400014: HammerCover_default3
+    400016: HangerHook_default5
+    400018: HangerPlate_default7
+    400020: Mic_default10
+    400022: MicBolt_default9
+    400024: MicSwivel_default11
+    400026: nuts_default6
+    400028: //RootNode
+    400030: Rest_default4
+    400032: screws_default12
+    2300000: Bells_default13
+    2300002: Box_default14
+    2300004: Cord_Leather-Black
+    2300006: DialerHandle_default
+    2300008: DialerKnob_default
+    2300010: EraPhone_Car_Paint_-_Matte_Dark_Gray
+    2300012: Hammer_default2
+    2300014: HammerCover_default3
+    2300016: HangerHook_default5
+    2300018: HangerPlate_default7
+    2300020: Mic_default10
+    2300022: MicBolt_default9
+    2300024: MicSwivel_default11
+    2300026: nuts_default6
+    2300028: Rest_default4
+    2300030: screws_default12
+    3300000: Bells_default13
+    3300002: Box_default14
+    3300004: Cord_Leather-Black
+    3300006: DialerHandle_default
+    3300008: DialerKnob_default
+    3300010: EraPhone_Car_Paint_-_Matte_Dark_Gray
+    3300012: Hammer_default2
+    3300014: HammerCover_default3
+    3300016: HangerHook_default5
+    3300018: HangerPlate_default7
+    3300020: Mic_default10
+    3300022: MicBolt_default9
+    3300024: MicSwivel_default11
+    3300026: nuts_default6
+    3300028: Rest_default4
+    3300030: screws_default12
+    4300000: Bells_default13
+    4300002: Box_default14
+    4300004: Cord_Leather-Black
+    4300006: DialerHandle_default
+    4300008: DialerKnob_default
+    4300010: EraPhone_Car_Paint_-_Matte_Dark_Gray
+    4300012: Hammer_default2
+    4300014: HammerCover_default3
+    4300016: HangerHook_default5
+    4300018: HangerPlate_default7
+    4300020: Mic_default10
+    4300022: MicBolt_default9
+    4300024: MicSwivel_default11
+    4300026: nuts_default6
+    4300028: Rest_default4
+    4300030: screws_default12
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
