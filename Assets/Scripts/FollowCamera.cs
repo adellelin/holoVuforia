@@ -25,7 +25,7 @@ public class FollowCamera : MonoBehaviour {
 
         // Set the position of the camera's transform to be the same as the player's, but offset by the calculated offset distance.
         transform.localPosition = movieCamera.transform.localPosition + offset;
-
+        //transform.rotation = movieCamera.transform.rotation + Vector3.Angle(0, 180, 0); ;
     }
 
 }

@@ -92,7 +92,7 @@ public class GazeGestureManagerBoth : MonoBehaviour
         for (int i = 0; i < ToniDeskText.Length; i++)
         {
             ToniDeskText[i].enabled = false;
-            Debug.Log("desk objects" + toniDeskObjects[i]);
+           // Debug.Log("desk objects" + toniDeskObjects[i]);
         }
 
         for (int i = 0; i < TomDeskText.Length; i++)

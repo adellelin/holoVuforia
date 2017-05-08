@@ -23,6 +23,7 @@ public class KeyCommandsToni : MonoBehaviour {
         if (ToniDoveStudio.activeSelf == false)
         {
             MovieBottom.SetActive(true);
+            //Debug.Log(MovieBottom.activeSelf);
             ToniDoveStudio.SetActive(true);
             KeyScene.SetActive(false);
             activationZoneTom.enabled = false;
