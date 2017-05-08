@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 22323f4e407b19445bd671175a9f7303
+timeCreated: 1494213273
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Libre Baskerville
+  fontNames:
+  - Libre Baskerville
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 0155d29bbccc15d43815dfb7d25fbe6c, type: 3}
+  - {fileID: 12800000, guid: 15487d8deb431234c89e42308efbceb3, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

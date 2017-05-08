@@ -14,19 +14,18 @@ public class FollowCamera : MonoBehaviour {
 
         //Calculate and store the offset value by getting the distance between the player's position and camera's position.
         offset = transform.localPosition - movieCamera.transform.localPosition;
-    }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+        Debug.Log("OFFSET: " +offset);
 
-    // LateUpdate is called after Update each frame
-    void LateUpdate()
-    {
+    }
+
+    // Update is called once per frame
+    void Update () {
+
+        // Debug.Log("movieCamera.transform.localPosition: " + movieCamera.transform.localPosition);
+
         // Set the position of the camera's transform to be the same as the player's, but offset by the calculated offset distance.
         transform.localPosition = movieCamera.transform.localPosition + offset;
-        //Debug.Log(transform.localPosition);
-        //PositionCamera.text = transform.localPosition.ToString();
+
     }
+
 }

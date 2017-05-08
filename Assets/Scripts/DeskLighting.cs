@@ -4,20 +4,24 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class DeskLighting : MonoBehaviour {
-    public GameObject deskPosition;       //Public variable to store a reference to the player game object
-    public Light deskLightObject;
-    private Vector3 deskOffset;         //Private variable to store the offset distance between the player and camera
+    public GameObject ToniDeskPosition;       //Public variable to store a reference to the player game object
+    public GameObject TomDeskPosition;
+    public Light ToniDeskLightObject;
+    public Light TomDeskLightObject;
+    private float ToniDeskOffset;         //Private variable to store the offset distance between the player and camera
+    private float TomDeskOffset;
     private Vector3 viewerTransform;
    // public Text PositionCamera;
 
     // Use this for initialization
     void Start () {
 
-        deskLightObject.enabled = false;
-        deskLightObject.enabled = true;
+        ToniDeskLightObject.enabled = false;
+        TomDeskLightObject.enabled = false;
+
         //Calculate and store the offset value by getting the distance between the player's position and camera's position.
         viewerTransform = transform.localPosition;
-        Debug.Log("viewerPosition: " + viewerTransform);
+        //Debug.Log("viewerPosition: " + viewerTransform);
         
         //deskLightObject = new GameObject("TheLight");
         //Light lightComp = deskLightObject.AddComponent<Light>();
@@ -28,20 +32,33 @@ public class DeskLighting : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         //deskOffset = transform.localPosition - deskPosition.transform.localPosition;
-        deskOffset = transform.position - deskPosition.transform.position;
+        ToniDeskOffset = Vector3.Distance(transform.position, ToniDeskPosition.transform.position);
+        TomDeskOffset = Vector3.Distance(transform.position, TomDeskPosition.transform.position);
+
         //Debug.Log("DeskPos: " + deskPosition.transform.localPosition);
         //Debug.Log("deskoffset" + Mathf.Abs(deskOffset.x));
 
-        if (Mathf.Abs(deskOffset.x) < 2f)
+        if (ToniDeskOffset < 2.8f)
             
         {
-            Debug.Log("walked into desk");
-            deskLightObject.enabled = true;
+            //Debug.Log("walked into desk");
+            ToniDeskLightObject.enabled = true;
         } else
         {
-            deskLightObject.enabled = false;
+            ToniDeskLightObject.enabled = true;
         }
-	}
+
+        if (TomDeskOffset < 2.8f)
+
+        {
+            //Debug.Log("walked into desk");
+            TomDeskLightObject.enabled = true;
+        }
+        else
+        {
+            TomDeskLightObject.enabled = true;
+        }
+    }
     /*
     void OnTriggerEnter(Collider CollisionCube)
     {

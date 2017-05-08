@@ -98,7 +98,7 @@ public class GazeGestureManagerBoth : MonoBehaviour
         for (int i = 0; i < TomDeskText.Length; i++)
         {
             TomDeskText[i].enabled = false;
-            Debug.Log("desk objects" + tomDeskObjects[i]);
+            //Debug.Log("desk objects" + tomDeskObjects[i]);
         }
 
         toniMovies.Add(MovieTopStartObject);
@@ -192,7 +192,7 @@ public class GazeGestureManagerBoth : MonoBehaviour
                     ToniDeskText[i].enabled = true;
                     //toniBio.transform.Rotate(Vector3.up * 50 * Time.deltaTime, Space.Self);
 
-                    Debug.Log("found desk object");
+                    //Debug.Log("found desk object");
                 }
                 else
                 {
@@ -213,7 +213,7 @@ public class GazeGestureManagerBoth : MonoBehaviour
                     TomDeskText[i].enabled = true;
                     //toniBio.transform.Rotate(Vector3.up * 50 * Time.deltaTime, Space.Self);
 
-                    Debug.Log("found desk object");
+                    //Debug.Log("found desk object");
                 }
                 else
                 {
@@ -237,13 +237,13 @@ public class GazeGestureManagerBoth : MonoBehaviour
             }
             else if (FocusedObject == movieLeft)
             {
-                Debug.Log("movieLEft");
+                //Debug.Log("movieLEft");
                 MovieLeftStartObject.PlayMovie();
 
             }
             else if (FocusedObject == movieRight)
             {
-                Debug.Log("movieRight");
+                //Debug.Log("movieRight");
                 MovieRightStartObject.PlayMovie();
 
             }

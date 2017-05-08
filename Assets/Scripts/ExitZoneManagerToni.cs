@@ -12,36 +12,30 @@ public class ExitZoneManagerToni : MonoBehaviour
     public GameObject ToniDoveStudio;
     public GameObject KeyScene;
     public GazeGestureManager keySceneGaze;
-    public GameObject exitActivationZonePosition;
-    float exitActivationZoneOffset;
+    
+
 
     void Start()
     {
         Debug.Log("Logging Collision script");
     }
 
-    void checkIfInExitZone()
+    private void Update()
     {
-        exitActivationZoneOffset = Vector3.Distance(transform.position, exitActivationZonePosition.transform.position);
-        //Debug.Log("sculptureoffset: "+sculptureActivationZoneOffset);
-        if (Mathf.Abs(exitActivationZoneOffset) < 3.3f)
-        {
-            exitScene();
-        }
+    
     }
-   
         
         
     void OnTriggerEnter(Collider CollisionCube)
     {
-        exitScene();
+        exitToniScene();
     }
     public void OnSelect()
     {
-        exitScene();
+        exitToniScene();
     }
 
-    void exitScene()
+    public void exitToniScene()
     {
         Debug.Log("Went through the exit");
         Renderer render = GetComponent<Renderer>();

@@ -20,8 +20,10 @@ public class KeyCommandsTom : MonoBehaviour {
 
     public void OnSelect()
     {
+        
         if (TomsStudio.activeSelf == false)
         {
+       
             ToniDoveStudio.SetActive(false);
 			
             TomsStudio.SetActive(true);
@@ -29,9 +31,10 @@ public class KeyCommandsTom : MonoBehaviour {
             activationZoneTom.enabled = true;
             activationZoneToni.enabled = false;
             //SceneManager.LoadScene("ToniDove");
-           
+            
             //gazeTom.enabled = true;
             KeyScene.SetActive(false);
+            Debug.Log("tom's key selected");
             gazeKeyScene.enabled =false;
 
         }

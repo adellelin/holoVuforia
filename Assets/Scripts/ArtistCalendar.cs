@@ -6,10 +6,12 @@ using UnityEngine.UI;
 public class ArtistCalendar : MonoBehaviour {
 
     public GameObject CalendarText;
+    public GameObject CalendarNewText;
     private bool isActive = false;
     // Use this for initialization
     void Start () {
         CalendarText.SetActive(false);
+        CalendarNewText.SetActive(false);
     }
 
 
@@ -25,10 +27,12 @@ public class ArtistCalendar : MonoBehaviour {
         if (isActive)
         {
             CalendarText.SetActive(true);
+            CalendarNewText.SetActive(true);
         }
         else
         {
             CalendarText.SetActive(false);
+            CalendarNewText.SetActive(false);
         }
     }
 }

@@ -8,15 +8,16 @@ public class ActivationZoneManagerTom : MonoBehaviour
 {
     public GameObject paintingActivationZonePosition;       //Public variable to store a reference to the painting game object
     public Light paintingActivationZoneLightObject;
-    public GameObject sculptureActivationZonePosition;       //Public variable to store a reference to the sculpture game object
-                                                             //public Light sculptureActivationZoneLightObject;
+    public GameObject sculptureActivationZonePosition;       //Public variable to store a reference to the sculpture game object                                                       //public Light sculptureActivationZoneLightObject;
     public GameObject sculptureActivationZoneLightObject;
+
     public GameObject deskActivationZonePosition;       //Public variable to store a reference to the desk game object
     public Light deskActivationZoneLightObject;
+
     private float paintingActivationZoneOffset;         //Private variable to store the offset distance between the painting and camera
     private float sculptureActivationZoneOffset;         //Private variable to store the offset distance between the sculpture and camera
     private Vector3 deskActivationZoneOffset;         //Private variable to store the offset distance between the desk and camera
-    private Vector3 viewerTransform;
+    private Vector3 viewerTransform;                // check viewer starting pos
     private bool paintingAudioTriggered = false;
     private bool sculptureAudioTriggered = false;   // set audio state
     public bool sculptureZoneActivated = false; // sets whether rotation on sculpture is allowed
@@ -25,6 +26,10 @@ public class ActivationZoneManagerTom : MonoBehaviour
     AudioSource paintingAudio;
     public AudioSource sculptureAudio;
     public GameObject pendulum;
+
+    public GameObject exitZonePosition;
+    private float exitZoneOffset;
+    public ExitZoneManagerTom exitManagerTom;
 
     // public Text PositionCamera;
 
@@ -108,6 +113,15 @@ public class ActivationZoneManagerTom : MonoBehaviour
         {
             deskActivationZoneLightObject.enabled = false;
         }
+
+        exitZoneOffset = Vector3.Distance(transform.position, exitZonePosition.transform.position);
+        //Debug.Log(paintingActivationZoneOffset);
+        if (exitZoneOffset < 2f)
+        {
+
+            exitManagerTom.exitTomScene();
+        }
+        else { }
     }
 
     private void playPaintingAudio()
