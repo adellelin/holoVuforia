@@ -1,2 +1,4 @@
 # holoVuforia
-vuforia working in hololens
+Unity code for MooR - artist portfolio for viewing on the Hololens
+
+
